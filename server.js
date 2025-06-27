@@ -65,7 +65,7 @@ client.use("/api", api);
 // Proxy requested.
 api.use(function(req, res, next){
     var settings = {
-        target: `https://api.roblox.com/`
+        target: `https://friends.roblox.com/`
     };
     if(req.headers.token){
         let tokenCheck = checkAuthentication(req, res);
